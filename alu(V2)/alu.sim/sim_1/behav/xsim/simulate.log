@@ -1,0 +1,52 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: Failed for + -1073741825
+Time: 40 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 80 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 120 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 160 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 200 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 240 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 280 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 320 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 360 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 400 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 440 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 480 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 520 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 560 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 600 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 640 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 680 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 720 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 760 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 800 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 840 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 880 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 920 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 960 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for + -1073741825
+Time: 1 us  Iteration: 0  Process: /sim_alu/stim_proc  File: C:/Users/pdhungana21/Desktop/alu/alu.srcs/sim_1/new/sim_alu.vhd

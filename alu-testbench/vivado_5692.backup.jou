@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb  8 14:39:38 2020
+# Process ID: 5692
+# Current directory: F:/alu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9732 F:\alu\alu.xpr
+# Log file: F:/alu/vivado.log
+# Journal file: F:/alu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/alu/alu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim
+launch_simulation
+source sim_alu.tcl
+close_sim

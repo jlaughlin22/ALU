@@ -1,0 +1,988 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb  8 14:39:38 2020
+# Process ID: 5692
+# Current directory: F:/alu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9732 F:\alu\alu.xpr
+# Log file: F:/alu/vivado.log
+# Journal file: F:/alu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/alu/alu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 723.988 ; gain = 102.848
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042615756
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 784.523 ; gain = 38.855
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042615756
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 785.563 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: alu
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1181.324 ; gain = 169.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu' [F:/alu/alu.srcs/sources_1/new/alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (1#1) [F:/alu/alu.srcs/sources_1/new/alu.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.059 ; gain = 233.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.059 ; gain = 233.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.059 ; gain = 233.379
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/alu/alu.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/alu/alu.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1323.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1408.898 ; gain = 397.219
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1408.898 ; gain = 623.336
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042615756
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1408.898 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042615756
+Time: 52 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 104 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 156 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 208 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 260 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 312 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 364 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 416 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 468 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 520 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 572 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 624 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 676 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 728 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 780 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 832 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 884 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 936 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 988 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1414.332 ; gain = 3.094
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042615756
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042615756
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1415.203 ; gain = 0.871
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - 2042609612
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - 2042609612
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1417.863 ; gain = 0.934
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1421.828 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1423.898 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Failed for - carry Flag
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 54 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 108 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 162 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 216 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 270 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 324 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 378 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 432 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 486 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 540 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 594 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 648 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 702 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 756 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 810 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 864 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 918 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - carry Flag
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+Error: Failed for - overflow
+Time: 972 ns  Iteration: 0  Process: /sim_alu/stim_proc  File: F:/alu/alu.srcs/sim_1/new/sim_alu.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1426.492 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.629 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj sim_alu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/alu/alu.srcs/sim_1/new/sim_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_alu'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+"xelab -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 330f6288d7b54ca396d3db2fd91b5ddd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_alu_behav xil_defaultlib.sim_alu -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture alu of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_alu
+Built simulation snapshot sim_alu_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/alu/alu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_alu_behav -key {Behavioral:sim_1:Functional:sim_alu} -tclbatch {sim_alu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sim_alu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_alu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1427.684 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 15:10:32 2020...
